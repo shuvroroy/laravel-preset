@@ -1,0 +1,25 @@
+{
+    "name": "shuvroroy/laravel-preset",
+    "description": "Shuvro Roy's Laravel Frontend Preset",
+    "keywords": ["laravel", "laravel-preset", "laravel-preset-tailwindcss", "tailwindcss"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shuvro Roy",
+            "email": "shuvro.nsu.cse@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "ShuvroRoy\\LaravelPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ShuvroRoy\\LaravelPreset\\PresetServiceProvider"
+            ]
+        }
+    },
+}
