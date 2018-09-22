@@ -2,7 +2,6 @@
 
 namespace ShuvroRoy\LaravelPreset;
 
-use Preset\Preset;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\Console\PresetCommand;
 
