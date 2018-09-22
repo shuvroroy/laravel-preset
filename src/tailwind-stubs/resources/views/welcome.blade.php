@@ -11,18 +11,20 @@
 	        </div>
 	        <div>
 	            <ul class="list-reset flex">
-	            	@auth
-	            		<li>
-		                    <a href="{{ url('/home') }}" class="text-xl no-underline text-grey-darker hover:text-grey-darkest">Home</a>
-		                </li>
-                    @else
-                    	<li class="mr-4">
-		                    <a href="{{ route('login') }}" class="text-xl no-underline text-grey-darker hover:text-grey-darkest">Login</a>
-		                </li>
-		                <li>
-		                    <a href="{{ route('register') }}" class="text-xl no-underline text-grey-darker hover:text-grey-darkest">Register</a>
-		                </li>
-                    @endauth
+	            	@if (Route::has('login'))
+		            	@auth
+		            		<li>
+			                    <a href="{{ url('/home') }}" class="text-xl no-underline text-grey-darker hover:text-grey-darkest">Home</a>
+			                </li>
+	                    @else
+	                    	<li class="mr-4">
+			                    <a href="{{ route('login') }}" class="text-xl no-underline text-grey-darker hover:text-grey-darkest">Login</a>
+			                </li>
+			                <li>
+			                    <a href="{{ route('register') }}" class="text-xl no-underline text-grey-darker hover:text-grey-darkest">Register</a>
+			                </li>
+	                    @endauth
+                    @endif
 	            </ul>
 	        </div>
 	    </nav>

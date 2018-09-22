@@ -42,7 +42,8 @@ php artisan preset tailwind:auth
 
 ![Reset Password](/screenshots/reset-password.png)
 
+![Verify](/screenshots/verify.png)
+
 ![Home](/screenshots/home.png)
 
-![Verify](/screenshots/verify.png)
 
