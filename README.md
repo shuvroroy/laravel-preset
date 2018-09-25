@@ -38,12 +38,19 @@ php artisan preset tailwind:auth
 
 ![Login](/screenshots/login.png)
 
-![Send Password Reset](/screenshots/change-password-form.png)
+![Home](/screenshots/home.png)
 
 ![Reset Password](/screenshots/reset-password.png)
 
+![Send Password Reset](/screenshots/change-password-form.png)
+
 ![Verify](/screenshots/verify.png)
 
-![Home](/screenshots/home.png)
+## Security
 
+If you discover any security related issues, please email shuvroshopno@gmail.com instead of using the issue tracker.
+
+## Credits
+
+- [Adam Wathan](https://github.com/adamwathan)
 
