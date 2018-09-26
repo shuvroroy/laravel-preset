@@ -30,6 +30,18 @@ With authentication layout, apply the scaffolding by running:
 php artisan preset tailwind:auth
 ```
 
+To generate a Tailwind config file for your project, apply the scaffolding by running:
+
+```
+./node_modules/.bin/tailwind init tailwind.js
+```
+
+Then update the setting in webpack.mix.js file:
+
+```
+require('tailwindcss')('./tailwind.js')
+```
+
 ## Screenshots
 
 ![Welcome](/screenshots/welcome.png)
