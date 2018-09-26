@@ -2,14 +2,10 @@
 
 @section('content')
     <div class="h-2 bg-indigo"></div>
-    <div class="container p-8 mx-auto">
-        <div class="mx-auto max-w-md">
-            <div class="py-8 text-center">
-                <div class="inline-block">
-                    <h1 class="text-3xl tracking-wide"><a href="{{ url('/') }}" class="text-grey-darkest font-semibold underline-indigo">{{ config('app.name', 'Laravel') }}</a></h1>
-                </div>
-            </div>
+    <div class="container mx-auto px-8 py-4">
+    	@include('auth.partials._nav')
 
+        <div class="mx-auto max-w-md mt-16">
             <div class="bg-white rounded shadow">
                 <div class="border-b border-grey-lighter py-8 font-bold text-grey-darkest text-center text-xl tracking-wide uppercase">
                     {{ __('Reset Password') }}
