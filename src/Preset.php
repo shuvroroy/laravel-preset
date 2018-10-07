@@ -142,6 +142,15 @@ class Preset extends ConsolePreset
      */
     protected static function updateWithAuthTemplates()
     {
+    	file_put_contents(
+    		app_path('Http/Controllers/HomeController.php'),
+    		str_replace(
+	            '{{namespace}}',
+	            Container::getInstance()->getNamespace(),
+	            file_get_contents(__DIR__.'/tailwind-stubs/Controllers/HomeController.php')
+	        )
+    	);
+
         file_put_contents(
             base_path('routes/web.php'),
             "\nAuth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home');\n\n",
@@ -151,11 +160,5 @@ class Preset extends ConsolePreset
         tap(new Filesystem, function ($files) {
             $files->copyDirectory(__DIR__.'/tailwind-stubs/resources/views', resource_path('views'));
         });
-
-        str_replace(
-            '{{namespace}}',
-            Container::getInstance()->getNamespace(),
-            file_get_contents(__DIR__.'/tailwind-stubs/Controllers/HomeController.php')
-        );
     }
 }
