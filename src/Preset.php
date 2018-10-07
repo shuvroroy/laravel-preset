@@ -3,6 +3,7 @@
 namespace ShuvroRoy\LaravelPreset;
 
 use Illuminate\Support\Arr;
+use Illuminate\Container\Container;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Console\Presets\Preset as ConsolePreset;
 
@@ -150,5 +151,11 @@ class Preset extends ConsolePreset
         tap(new Filesystem, function ($files) {
             $files->copyDirectory(__DIR__.'/tailwind-stubs/resources/views', resource_path('views'));
         });
+
+        str_replace(
+            '{{namespace}}',
+            Container::getInstance()->getNamespace(),
+            file_get_contents(__DIR__.'/tailwind-stubs/Controllers/HomeController.php')
+        );
     }
 }
