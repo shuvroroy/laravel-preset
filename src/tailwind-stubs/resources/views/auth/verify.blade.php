@@ -5,7 +5,7 @@
     <div class="container mx-auto px-8 py-4">
     	@include('auth.partials._nav')
 
-        <div class="mx-auto max-w-sm mt-16">
+        <div class="mx-auto max-w-md mt-16">
             <div class="bg-white rounded shadow">
                 <div class="border-b border-grey-lighter py-8 font-bold text-grey-darkest text-center text-xl tracking-wide uppercase">
                     Verify Your Email Address

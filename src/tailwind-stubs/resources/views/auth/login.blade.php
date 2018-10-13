@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="flex">
-                        <button type="submit" class="rounded bg-indigo hover:bg-indigo-dark w-full p-4 text-sm text-white uppercase font-bold tracking-wide">
+                        <button type="submit" class="rounded bg-indigo hover:bg-indigo-dark w-full p-4 text-sm text-white uppercase font-bold tracking-wide focus:outline-none">
                             {{ __('Login') }}
                         </button>
                     </div>
