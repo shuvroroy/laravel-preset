@@ -3,7 +3,7 @@
 @section('content')
     <div class="h-2 bg-indigo"></div>
     <div class="container mx-auto px-8 py-4">
-    	@include('auth.partials._nav')
+    	@include('layouts.partials._nav')
 
         <div class="mx-auto max-w-sm mt-16">
             <div class="bg-white rounded shadow">

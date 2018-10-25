@@ -151,14 +151,18 @@ class Preset extends ConsolePreset
 	        )
     	);
 
+    	tap(new Filesystem, function ($files) {
+            $files->copyDirectory(__DIR__.'/tailwind-stubs/resources/views', resource_path('views'));
+        });
+
+    	if (str_contains(file_get_contents(base_path('routes/web.php')), "Auth::routes();")) {
+            return;
+        }
+
         file_put_contents(
             base_path('routes/web.php'),
             "\nAuth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home');\n\n",
             FILE_APPEND
         );
-
-        tap(new Filesystem, function ($files) {
-            $files->copyDirectory(__DIR__.'/tailwind-stubs/resources/views', resource_path('views'));
-        });
     }
 }
