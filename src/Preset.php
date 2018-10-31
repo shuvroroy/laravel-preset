@@ -50,7 +50,7 @@ class Preset extends ConsolePreset
             'laravel-mix-purgecss' => '^2.2.3',
             'postcss-nesting' => '^7.0.0',
             'postcss-import' => '^12.0.0',
-            'tailwindcss' => '^0.6.6',
+            'tailwindcss' => '^0.7.0',
         ] + Arr::except($packages, [
             'bootstrap',
             'jquery',

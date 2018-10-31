@@ -33,7 +33,7 @@ php artisan preset tailwind:auth
 To generate a Tailwind config file for your project, apply the scaffolding by running:
 
 ```
-./node_modules/.bin/tailwind init tailwind.js
+tailwind init
 ```
 
 Then update the setting in webpack.mix.js file:
