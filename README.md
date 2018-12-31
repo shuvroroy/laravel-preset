@@ -1,5 +1,9 @@
 # 🚀 Shuvro Roy's Laravel Frontend Preset
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/shuvroroy/laravel-preset.svg?style=flat-square)](https://packagist.org/packages/shuvroroy/laravel-preset)
+[![Issues](https://img.shields.io/github/issues/shuvroroy/laravel-preset.svg?style=flat-square)](https://github.com/shuvroroy/laravel-preset/issues)
+[![Total Downloads](https://img.shields.io/packagist/dt/shuvroroy/laravel-preset.svg?style=flat-square)](https://packagist.org/packages/preset/laravel-preset)
+
 A Laravel front-end scaffolding preset for Tailwind CSS - a Utility-First CSS Framework for Rapid UI Development 👌🏻
 
 What it includes:
@@ -30,7 +34,7 @@ With authentication layout, apply the scaffolding by running:
 php artisan preset tailwind:auth
 ```
 
-Then run this commend
+Then run this command
 
 ```
 npm install
@@ -48,7 +52,7 @@ Then update the setting in webpack.mix.js file:
 require('tailwindcss')('./tailwind.js')
 ```
 
-Then run this commend
+Then run this command
 
 ```
 npm run dev
